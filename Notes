@@ -1,0 +1,37 @@
+GG - Remaining CPU time
+
+int quantum = ZZ.WW(current->HH);      // Get time slice for this priority level
+current->GG -= quantum;                 // Decrease GG by time quantum
+if (current->GG < 0)
+    current->GG = 0;                    // Prevent negative values
+
+
+HH - Priority level (0, 1, 2)
+Time Quantum (2, 4, 6) 
+
+FF - Total CPU time needed.
+
+
+AA - Process Type
+BB - Process State
+
+DD - Process ID
+EE - Scheduling Priority
+II - Aging Counter
+JJ - Current process state
+KK - Max Resource needed
+MM - Remaining Resources needed
+
+OO - Resource manager tracking
+PP - Request resources
+QQ - Release Resources
+RR - checks blocked processes
+SS - Prints available resources
+
+TT - MLFQ Scheduler
+YY - Converts AA enum to queue index
+OO - Enqueue new process at level 0
+UU - Re queue
+XX - De queue
+VV - Age to promote processes
+WW - Get Quantum time
